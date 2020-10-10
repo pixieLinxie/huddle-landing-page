@@ -131,3 +131,59 @@ footer {
     padding: 13px 45px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  body {
+    align-items: stretch;
+    background-size: contain;
+  }
+  main {
+    max-width: 90vw;
+    margin: 1.5rem 1rem;
+    justify-self: center;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  }
+
+  .logo {
+    max-height: 55px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.15rem;
+    line-height: 1.5em;
+  }
+  button {
+    font-size: 18px;
+    padding: 17px 62px;
+  }
+  header{
+    margin-bottom: 0;
+    align-self: center
+  }
+  footer {
+    margin-top: 0px;
+  }
+  footer {
+    grid-template-columns: 1fr repeat(3, 50px);
+    grid-column-gap: 8px;
+    align-self: center;
+  }
+  section {
+    align-self: end;
+  }
+  .border-circle {
+    height: 38px;
+    width: 38px;
+    margin: 0;
+  }
+  .border-circle img {
+    width: 18px;
+    height: auto;
+    padding: 10px;
+  }
+}
